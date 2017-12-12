@@ -1,6 +1,0 @@
-version: 1.0.{build}
-image: Visual Studio 2017
-
-test_script:
-- cmd: cd ./DotNetTests.UnitTests/DotNetTests.UnitTests.csproj && dotnet restore && dotnet test
-- cmd: cd ./DotNetTests.IntegrationTests/DotNetTests.IntegrationTests.csproj && dotnet restore && dotnet test
