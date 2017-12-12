@@ -2,5 +2,5 @@ version: 1.0.{build}
 image: Visual Studio 2017
 
 test_script:
-- cmd: dotnet test ./DotNetTests.UnitTests/DotNetTests.UnitTests.csproj
-- cmd: dotnet test ./DotNetTests.IntegrationTests/DotNetTests.IntegrationTests.csproj
+- cmd: cd ./DotNetTests.UnitTests/DotNetTests.UnitTests.csproj && dotnet restore && dotnet test
+- cmd: cd ./DotNetTests.IntegrationTests/DotNetTests.IntegrationTests.csproj && dotnet restore && dotnet test
